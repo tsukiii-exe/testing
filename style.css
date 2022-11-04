@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+.header{
+  background: #1b1b1b;
+  width: 100%;
+  height: 80px;
+}
+.menu .logo a{
+  float: left;
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.menu .navlink{
+  display: flex;
+  float: right;
+  padding-top: 25px;
+}
+.navlink li{
+  list-style: none;
+  padding-left: 20px;
+}
+.navlink li:first-child{
+  margin-left: 0px;
+}
+.navlink li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.navlink li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+  background: none no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.image-gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #333;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.7s;
+}
+
+.image-container span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.image-container span img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-wrapper {
+  position: relative;
+  width: 90%;
+  
+}
+
+.btn {
+  position: absolute;
+  bottom: -80px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 05px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(1.5);
+}
+
+#prev {
+  left: 25%;
+}
+
+#next {
+  right: 25%;
+}
+.footer{
+    background: #1b1b1b;
+    height: 80px;
+    
+}
+.footer .credits a{
+  float: left;
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 10px;
+}
